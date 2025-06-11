@@ -8,8 +8,8 @@ LABEL "com.github.actions.description"="Deploy your DNS configuration to multipl
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="yellow"
 
-ENV DNSCONTROL_VERSION="4.19.0"
-ENV DNSCONTROL_CHECKSUM="11f718e792746041fc36df954e0776f3f7f0e0574a4b844bbea24d0afed00307"
+ENV DNSCONTROL_VERSION="4.21.0"
+ENV DNSCONTROL_CHECKSUM="6ef0975a0f101bbe3b9e850dc6b4cf94b2d6d13cdf76551f6d2cc9ee605d2a3a"
 ENV USER=dnscontrol-user
 
 RUN apk -U --no-cache upgrade && \
@@ -27,7 +27,7 @@ RUN chown dnscontrol-user:dnscontrol-user  dnscontrol
 RUN chmod +x dnscontrol && \
     chmod 755 dnscontrol && \
     cp dnscontrol /usr/local/bin/dnscontrol
-    
+
 RUN ["dnscontrol", "version"]
 
 COPY README.md entrypoint.sh bin/filter-preview-output.sh /
