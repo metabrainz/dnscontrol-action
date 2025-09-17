@@ -15,7 +15,7 @@
   ],
   "packageRules": [
     {
-        "matchPackageNames": "dnscontrol**"
+        "matchPackageNames": " dnscontrol_*_linux_amd64\\.tar\\.gz"
     }
 ]
 }
