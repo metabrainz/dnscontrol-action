@@ -8,6 +8,7 @@ LABEL "com.github.actions.description"="Deploy your DNS configuration to multipl
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="yellow"
 
+# renovate: datasource=github-release-attachments depName=dnscontrol packageName=StackExchange/dnscontrol
 ENV DNSCONTROL_VERSION="4.24.0"
 ENV DNSCONTROL_CHECKSUM="c9afc8155e38cd8a6b1c7a7966bf98fb5f4d6415d28c342b2742300d3f3e2df4"
 ENV USER=dnscontrol-user
