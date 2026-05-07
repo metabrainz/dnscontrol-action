@@ -18,7 +18,7 @@ RUN apk -U --no-cache upgrade && \
 
 RUN  addgroup -S dnscontrol-user && adduser -S dnscontrol-user -G dnscontrol-user --disabled-password
 
-RUN curl -sL "https://github.com/StackExchange/dnscontrol/releases/download/${DNSCONTROL_VERSION}/dnscontrol_${DNSCONTROL_VERSION//v}_linux_amd64.tar.gz" \
+RUN curl -sL "https://github.com/DNSControl/dnscontrol/releases/download/${DNSCONTROL_VERSION}/dnscontrol_${DNSCONTROL_VERSION//v}_linux_amd64.tar.gz" \
     -o dnscontrol && \
     echo "$DNSCONTROL_CHECKSUM  dnscontrol" | sha256sum -c - && \
     tar xvf dnscontrol
