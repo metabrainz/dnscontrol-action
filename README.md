@@ -1,6 +1,6 @@
 # DNSControl Action
 
-![](https://github.com/is-cool-me/dnscontrol-action/workflows/build/badge.svg)
+![](https://github.com/metabrainz/dnscontrol-action/workflows/build/badge.svg)
 
 Deploy your DNS configuration using [GitHub Actions](https://github.com/actions)
 using [DNSControl](https://github.com/StackExchange/dnscontrol/).
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: DNSControl check
-        uses: is-cool-me/dnscontrol-action@v4.22.0
+        uses: metabrainz/dnscontrol-action@v4.22.0
         with:
           args: check
 
@@ -54,7 +54,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl preview
-        uses: is-cool-me/dnscontrol-action@v4.22.0
+        uses: metabrainz/dnscontrol-action@v4.22.0
         id: dnscontrol_preview
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -134,7 +134,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl push
-        uses: is-cool-me/dnscontrol-action@v4.22.0
+        uses: metabrainz/dnscontrol-action@v4.22.0
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         with:

@@ -1,7 +1,7 @@
 FROM alpine:3.24.1@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
 
-LABEL repository="https://github.com/is-cool-me/dnscontrol-action"
-LABEL maintainer="light <admin@lighthosting.eu.org>"
+LABEL repository="https://github.com/metabrainz/dnscontrol-action"
+LABEL maintainer="Julian Anderson <julian@metabrainz.org>"
 
 LABEL "com.github.actions.name"="DNSControl"
 LABEL "com.github.actions.description"="Deploy your DNS configuration to multiple providers."
