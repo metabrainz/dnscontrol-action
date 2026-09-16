@@ -9,8 +9,8 @@ LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="yellow"
 
 # renovate: datasource=github-release-attachments depName=dnscontrol packageName=StackExchange/dnscontrol
-ENV DNSCONTROL_VERSION="v5.0.4"
-ENV DNSCONTROL_CHECKSUM="f1067b2d6e2242206b7140dd01ba34424fe577b0f5edd75b1fcd92caf84af35a"
+ENV DNSCONTROL_VERSION="v5.1.0"
+ENV DNSCONTROL_CHECKSUM="9f9725ab750d39577b3f33a94a7ff20ba0d7228fb07544627f3210266ec119be"
 ENV USER=dnscontrol-user
 
 RUN apk -U --no-cache upgrade && \
